@@ -1,0 +1,300 @@
+{
+  "keys": "/Users/emmachen/private/react/template-react-egg2/config/config.default.js",
+  "middleware": "/Users/emmachen/private/react/template-react-egg2/config/config.default.js",
+  "view": {
+    "defaultViewEngine": "/Users/emmachen/private/react/template-react-egg2/config/config.default.js",
+    "mapping": {
+      ".html": "/Users/emmachen/private/react/template-react-egg2/config/config.default.js"
+    },
+    "root": "/Users/emmachen/private/react/template-react-egg2/config/config.default.js",
+    "cache": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-view/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/emmachen/private/react/template-react-egg2/config/config.default.js",
+    "dir": "/Users/emmachen/private/react/template-react-egg2/config/config.default.js",
+    "dynamic": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-static/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg-view-nunjucks/config/config.local.js"
+  },
+  "env": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "name": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "version": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "private": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "@testing-library/jest-dom": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "@testing-library/react": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "@testing-library/user-event": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "dayjs": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "egg": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "react": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "react-dom": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "react-scripts": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "build": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "build:dev": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "test": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "eject": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "egg-server": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "egg-start": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "egg-stop": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    },
+    "eslintConfig": {
+      "extends": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    },
+    "browserslist": {
+      "production": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "development": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "@babel/plugin-proposal-decorators": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "babel-plugin-import": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "customize-cra": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "dotenv-cli": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "less": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "less-loader": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "react-app-rewired": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "strict": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "depth": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "env": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "level": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "logging": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "port": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/emmachen/private/react/template-react-egg2/node_modules/egg/config/config.default.js"
+}
