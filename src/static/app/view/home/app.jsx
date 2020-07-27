@@ -10,7 +10,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>123</div>
+      <>
+      <div>hello</div>
+      <a href="#/demo/list">demo</a>
+      </>
     )
   }
 }

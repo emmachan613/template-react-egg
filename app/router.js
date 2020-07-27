@@ -5,10 +5,11 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  const { notfound } = controller.web.index;
-  const { index } = controller.home
+  const { index, login, notfound } = controller.web.index;
+  // const { index, login } = controller.home
 
   router.get('/', index)
+  router.get('/login', login)
   // web
   // app.redirect('/', '/act', 302);
   // router.get('/act', index)

@@ -5,18 +5,19 @@ const Controller = require('egg').Controller;
 class WebController extends Controller {
   async index() {
     const { ctx } = this;
-    ctx.body = 'hi egg'
-    // await ctx.render('page/act.html');
+    // ctx.body = 'hi egg'
+    await ctx.render('index.html');
   }
 
-  async mng() {
+  async login() {
     const { ctx } = this;
-    await ctx.render('page/mng.html')
+    await ctx.render('login.html')
   }
 
   async notfound() {
     const { ctx } = this;
-    await ctx.render('page/404.html')
+    ctx.body = '找不到页面'
+    // await ctx.render('404.html')
   }
 
   search() {

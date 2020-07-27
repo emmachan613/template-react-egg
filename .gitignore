@@ -15,6 +15,10 @@
 # testing
 /coverage
 
+# logs
+/logs
+/run
+
 # production
 /dist
 # misc

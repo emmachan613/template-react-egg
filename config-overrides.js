@@ -11,7 +11,6 @@ const {
   addDecoratorsLegacy, 
   addWebpackAlias,
   overrideDevServer,
-  watchAll
 } = require('customize-cra');
 // 关闭map文件输出
 // method 1
@@ -22,63 +21,78 @@ const rewiredMap = () => config => {
   return config;
 };
 
-const addWatchFilesToDisk = () => config => {
-  console.log('config---before----', config)
+const removeManifest = () => config => {
+  config.plugins = config.plugins.filter(
+    p => p.constructor.name !== "ManifestPlugin"
+  );
+  return config;
+};
+
+/* rewrite devServer config */
+const rewriteDevServerConfig = () => config => {
   config = Object.assign(config, {
-    writeToDisk: true,
+    writeToDisk: true, //把打包文件添加到硬盘
     contentBase: [path.join(__dirname, 'dist'), path.join(__dirname, 'assets')],
-    hot: false,
+    hot: true,
     open: false,
     quiet: false,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:7001',
-      },
-    },
-    // historyApiFallback: {
-    //   rewrites: [
-    //     { from: /^\//, to: '/login.html' },
-    //     // { from: /^\/login$/, to: '/public/login.html' }
-    //   ]
+    // proxy: {
+    //   '/api': {
+    //     target: 'http://localhost:7001',
+    //   },
     // },
+    historyApiFallback: { // multiple page
+      rewrites: [
+        { from: /^\/$/, to: '/index.html' },
+        { from: /^\/login$/, to: '/login.html' },
+        { from: /./, to: path.resolve(__dirname, './public/404.html') },
+      ]
+    },
   })
-  console.log('after---before----', config.historyApiFallback)
-  // const useconfig = {
-  //   test:  false
-  // }
-  return {
-    ...config,
-    // ...useconfig
-  }
-
   return config
 }
 
 /* use multipe entry */
 const multipleEntry = require('react-app-rewire-multiple-entry')([
     {
-      entry: 'src/login/index.js',
+      entry: 'src/static/login/index.jsx',
       template: 'public/index.html',
       outPath: 'login.html'
+    },
+    {
+      entry: 'src/static/app/index.jsx',
+      template: 'public/template.html',
+      outPath: 'index.html'
     }
   ]);
 
 /* change output path */
 const publicPathPlugin = () => (config, env) => {
-  // console.log('before----config; publicPathPlugin--', config, env)
   config.output = {
     filename: "[name].[hash:8].js",
-    path: path.resolve(__dirname, "dist3"),
+    path: path.resolve(__dirname, "dist1"),
     publicPath: '/',
     chunkFilename: "js/[name].[hash:8].js",
   }
-  // console.log('after----config; publicPathPlugin--', config, env)
 
+  return config
+}
+
+//部分代码省略
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const rewriteCleabPlugin = () => config => {
+  config.plugins = (config.plugins || []).concat([
+    new CleanWebpackPlugin({
+      dry: false, // 模拟删除
+      cleanOnceBeforeBuildPatterns: [path.join(__dirname, "dist")]
+    })
+  ])
   return config
 }
 
 const overrideConfig = {
   webpack: override(
+    rewriteCleabPlugin(),
     //多页面入口
     multipleEntry.addMultiEntry,
     //按需加载
@@ -94,36 +108,26 @@ const overrideConfig = {
     }),
     //关闭map文件输出
     rewiredMap(),
+    //删除manifest
+    removeManifest(),
     //添加别名
     addWebpackAlias({
-      ["@"]: path.resolve(__dirname, "app/static"),
+      ["@app"]: path.resolve(__dirname, "src/static/app"),
+      ["@login"]: path.resolve(__dirname, "src/static/login"),
     }),
     //支持装饰器
     addDecoratorsLegacy(),
     //打包路径
     // publicPathPlugin(),
-    
   ),
+  
   devServer: overrideDevServer(
-    //dev模式把打包文件添加到硬盘
-    addWatchFilesToDisk(),
-    //dev server plugin
-    watchAll(),
-    (config) => {
-      return {
-        ...config,
-        historyApiFallback: {
-          rewrites: [
-            { from: /^\//, to: '/login.html' },
-            // { from: /^\/login$/, to: '/public/login.html' }
-          ]
-        },
-      }
-    }
+    rewriteDevServerConfig(),
   ),
   // The paths config to use when compiling your react app for development or production.
   paths: function(paths, env) { // 目前已知build appBuild才生效
     // ...add your paths config
+    console.log("paths=======",paths)
     return paths;
     // const userPaths = {
     //   appIndexJs: path.resolve(__dirname, 'app/static/index.js'),

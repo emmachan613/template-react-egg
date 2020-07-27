@@ -31,13 +31,13 @@ module.exports = appInfo => {
     },
     // Root directory for template files is absolute path, with default value ${baseDir}/app/view.
     root: [
-      path.join(appInfo.baseDir, 'build'),
+      path.join(appInfo.baseDir, 'dist'),
     ].join(',')
   };
 
   config.static = {
-    prefix: '/public/',
-    dir: path.join(appInfo.baseDir, 'build')
+    prefix: '/',
+    dir: path.join(appInfo.baseDir, 'dist')
   };
 
   return {

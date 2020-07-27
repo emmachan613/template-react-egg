@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import * as serviceWorker from './serviceWorker';
-class App extends React.Component{
-  render() {
-    return 'login page'
-  }
-}
+import './index.css';
+import App from './App';
+// import * as serviceWorker from '@app/utils/serviceWorker';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('main')
 );
 
 // If you want your app to work offline and load faster, you can change

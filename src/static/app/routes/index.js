@@ -8,10 +8,8 @@ const NoMatch = lazy(() => import('../view/error/404.jsx'))
 const router = (
   <Suspense fallback={<div>Loading...</div>}>
   <Switch>
-  
+    <Route path="/" exact component={lazy(() => import('../view/home/app.jsx'))}/>
     <Route path="/demo/list" exact component={lazy(() => import('../view/demo/list/app'))}/>
-
-    <Route path="/" exact component={NoMatch}/>
     <Route path="*" component={NoMatch}/>
 
   </Switch >
