@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import '../../assets/stylesheet/global.less';
 import App from './App';
 // import * as serviceWorker from '@app/utils/serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('main')
 );
 

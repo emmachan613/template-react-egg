@@ -36,11 +36,14 @@ const rewriteDevServerConfig = () => config => {
     hot: true,
     open: false,
     quiet: false,
-    // proxy: {
-    //   '/api': {
-    //     target: 'http://localhost:7001',
-    //   },
-    // },
+    proxy: {
+      '/api': {// '/api':匹配项
+        target: 'http://localhost:7001', // 接口的域名
+        secure: false, // 如果是https接口，需要配置这个参数
+        changeOrigin: true, // 如果接口跨域，需要进行这个参数配置
+        pathRewrite: {},
+      }
+    },
     historyApiFallback: { // multiple page
       rewrites: [
         { from: /^\/$/, to: '/index.html' },
@@ -112,6 +115,7 @@ const overrideConfig = {
     removeManifest(),
     //添加别名
     addWebpackAlias({
+      ["@"]: path.resolve(__dirname, "src/static"),
       ["@app"]: path.resolve(__dirname, "src/static/app"),
       ["@login"]: path.resolve(__dirname, "src/static/login"),
     }),
@@ -125,19 +129,9 @@ const overrideConfig = {
     rewriteDevServerConfig(),
   ),
   // The paths config to use when compiling your react app for development or production.
-  paths: function(paths, env) { // 目前已知build appBuild才生效
+  paths: function(paths, env) {
     // ...add your paths config
-    console.log("paths=======",paths)
     return paths;
-    // const userPaths = {
-    //   appIndexJs: path.resolve(__dirname, 'app/static/index.js'),
-    //   appSrc: path.resolve(__dirname, 'app/static'),
-    //   appBuild: path.resolve(__dirname, 'dist1')
-    // }
-    // return {
-    //   ...paths,
-    //   ...userPaths
-    // }
   },
 }
 

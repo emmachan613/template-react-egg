@@ -6,7 +6,6 @@ const path = require('path');
  * @param {Egg.EggAppInfo} appInfo app info
  */
 module.exports = appInfo => {
-  console.log('appInfo----', appInfo)
   /**
    * built-in config
    * @type {Egg.EggAppConfig}

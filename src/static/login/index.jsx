@@ -7,9 +7,7 @@ class App extends React.Component{
   }
 }
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('main')
 );
 

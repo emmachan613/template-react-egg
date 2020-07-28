@@ -1,12 +1,20 @@
 {
-  "name": "template-react-egg2",
-  "version": "0.1.0",
+  "name": "template-react-egg",
+  "version": "1.0.0",
   "private": true,
+  "description": "A react template with egg.js",
+  "repository": "https://github.com/emmachan613/template-react-egg.git",
+  "author": "emmachan",
+  "keywords": [
+    "egg",
+    "react"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.4.3",
+    "axios": "^0.19.2",
     "dayjs": "^1.8.30",
     "egg": "^2.27.0",
     "egg-scripts": "^2.13.0",
@@ -49,7 +57,7 @@
     "dotenv-cli": "^3.2.0",
     "egg-bin": "^4.15.0",
     "less": "^3.12.2",
-    "less-loader": "^6.2.0",
+    "less-loader": "5.0.0",
     "react-app-rewire-multiple-entry": "^2.2.0",
     "react-app-rewired": "^2.1.6"
   }
